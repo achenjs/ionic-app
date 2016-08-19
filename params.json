@@ -1,0 +1,6 @@
+{
+  "name": "Ionicdemo",
+  "tagline": "angular2.0+ionic2.0开发的一个小型demo",
+  "body": "### 开发环境angular2.0  ionic@beta-37  node -v 6.3.1.\r\n    第一步：  npm install\r\n\r\n### 项目介绍\r\n    一个简易的朋友圈app，已经测试android真机，无太大bug。\r\n\r\n### 项目中运用的组件\r\n    alert,menus...\r\n\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
