@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      朋友列表
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="about">
+  <ion-list>
+    <ion-item-sliding *ngFor="let contact of contacts">
+      <ion-item (click)="itemClick($event,contact)">
+        <ion-avatar item-left>
+          <img src="{{contact.contactid}}">
+        </ion-avatar>
+        <h2>{{contact.contactname}}</h2>
+        <p>{{contact.contactphone}}</p>
+      </ion-item>
+      <ion-item-options side="left" (ionSwipe)="saveItem(item)">
+        <button (click)="zhiding(contact)">
+          <ion-icon name="heart"></ion-icon>
+          置顶
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button>
+          修改
+        </button>
+        <button danger (click)="removeContent(contact)">
+          <ion-icon name="trash"></ion-icon>
+          移除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

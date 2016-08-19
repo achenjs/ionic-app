@@ -1,0 +1,18 @@
+.UserCenter{
+  .back-button.show-back-button{
+    display: none;
+  }
+}
+.AlignCenter{
+  max-width: 10rem;
+  max-height: 10rem;
+  margin: 0 auto 10rem;
+  img{
+    width: 8rem;
+    height: 8rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 4rem;
+    display: inline-block;
+  }
+}

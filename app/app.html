@@ -1,0 +1,18 @@
+<ion-menu side="left" [content]="mycontent">
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="images/1.jpg">
+        </ion-avatar>
+        <h2>琛琛</h2>
+        <p>ES6,angular2.0,ionic2.0</p>
+      </ion-item>
+    </ion-list>
+    <button clear block primary *ngFor="let p of page" (click)="clickPages($event,p)">
+      <ion-icon name="{{p.icon}}"></ion-icon>
+      <div>{{p.container}}</div>
+    </button>
+  </ion-content>
+</ion-menu>
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

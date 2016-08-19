@@ -1,0 +1,51 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/about/about";
+
+@import "../pages/contact/contact";
+
+@import "../pages/home/home";
+
+@import "../pages/about/aboutInfo";
+
+@import "../pages/contact/usercenter";
+
+@import "../pages/tabs/tabs";
+
+body{
+  font-family: cursive,fantasy,inherit,monospace,sans-serif,serif,'Microsoft Yahei';
+}
+
+ion-content{
+  text-align: left;
+}
+
+.AlignRight{
+  text-align: right;
+}
+.AlignCenter{
+  text-align: center;
+}
+.marginTop10{
+  margin-top: 10px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 12px;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  font-size: 12px;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 12px;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 12px;
+}

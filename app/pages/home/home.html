@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle fab fab-left>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      朋友圈
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="home">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-card *ngFor="let dataItem of data.data1">
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="{{dataItem.pic}}"/>
+        </ion-avatar>
+        <h2>{{dataItem.name}}</h2>
+        <p>{{dataItem.leixing}}</p>
+      </ion-item>
+      <img src="{{dataItem.pictrue}}">
+      <ion-card-content>
+        <p>{{dataItem.content}}</p>
+        <ion-item class="bottom_title">
+          <button clear primary item-left>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>{{dataItem.zan}} 赞</div>
+          </button>
+          <button clear primary item-left>
+            <ion-icon name="text"></ion-icon>
+            <div>{{dataItem.pinlun}} 评论</div>
+          </button>
+          <ion-note item-right>
+            {{dataItem.date}}
+          </ion-note>
+        </ion-item>
+      </ion-card-content>
+  </ion-card>
+</ion-content>
