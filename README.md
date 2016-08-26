@@ -4,6 +4,12 @@
     只需两步，
     第一步：  npm install
     第二步：  ionic serve
+    
+    androird版本
+    输入 ionic platform add android      
+    
+    ios版本
+    输入 ionic platform add ios     
 
 ### 项目介绍
     一个简易的朋友圈app，已经测试android真机，无太大bug。
